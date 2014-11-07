@@ -14,6 +14,9 @@
 		67376EDC1A0C978700A6AC1B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67376EDB1A0C978700A6AC1B /* Images.xcassets */; };
 		67376EDF1A0C978700A6AC1B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67376EDD1A0C978700A6AC1B /* LaunchScreen.xib */; };
 		67376EEB1A0C978700A6AC1B /* XHRefreshControlTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 67376EEA1A0C978700A6AC1B /* XHRefreshControlTests.m */; };
+		67376EF71A0C97B800A6AC1B /* XHRefreshControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 67376EF61A0C97B800A6AC1B /* XHRefreshControl.m */; };
+		67D420AD1A0D0999008A1853 /* XHWeakObjectAssociator.m in Sources */ = {isa = PBXBuildFile; fileRef = 67D420AC1A0D0999008A1853 /* XHWeakObjectAssociator.m */; };
+		67D420B01A0D1446008A1853 /* XHDemoRefreshControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 67D420AF1A0D1446008A1853 /* XHDemoRefreshControl.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,12 @@
 		67376EE41A0C978700A6AC1B /* XHRefreshControlTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XHRefreshControlTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		67376EE91A0C978700A6AC1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		67376EEA1A0C978700A6AC1B /* XHRefreshControlTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XHRefreshControlTests.m; sourceTree = "<group>"; };
+		67376EF51A0C97B800A6AC1B /* XHRefreshControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHRefreshControl.h; sourceTree = "<group>"; };
+		67376EF61A0C97B800A6AC1B /* XHRefreshControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHRefreshControl.m; sourceTree = "<group>"; };
+		67D420AB1A0D0999008A1853 /* XHWeakObjectAssociator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHWeakObjectAssociator.h; sourceTree = "<group>"; };
+		67D420AC1A0D0999008A1853 /* XHWeakObjectAssociator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHWeakObjectAssociator.m; sourceTree = "<group>"; };
+		67D420AE1A0D1446008A1853 /* XHDemoRefreshControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHDemoRefreshControl.h; sourceTree = "<group>"; };
+		67D420AF1A0D1446008A1853 /* XHDemoRefreshControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHDemoRefreshControl.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,10 +90,13 @@
 		67376ECD1A0C978700A6AC1B /* XHRefreshControl */ = {
 			isa = PBXGroup;
 			children = (
+				67376EF41A0C97A200A6AC1B /* RefreshControl */,
 				67376ED21A0C978700A6AC1B /* AppDelegate.h */,
 				67376ED31A0C978700A6AC1B /* AppDelegate.m */,
 				67376ED51A0C978700A6AC1B /* ViewController.h */,
 				67376ED61A0C978700A6AC1B /* ViewController.m */,
+				67D420AE1A0D1446008A1853 /* XHDemoRefreshControl.h */,
+				67D420AF1A0D1446008A1853 /* XHDemoRefreshControl.m */,
 				67376ED81A0C978700A6AC1B /* Main.storyboard */,
 				67376EDB1A0C978700A6AC1B /* Images.xcassets */,
 				67376EDD1A0C978700A6AC1B /* LaunchScreen.xib */,
@@ -117,6 +129,17 @@
 				67376EE91A0C978700A6AC1B /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		67376EF41A0C97A200A6AC1B /* RefreshControl */ = {
+			isa = PBXGroup;
+			children = (
+				67376EF51A0C97B800A6AC1B /* XHRefreshControl.h */,
+				67376EF61A0C97B800A6AC1B /* XHRefreshControl.m */,
+				67D420AB1A0D0999008A1853 /* XHWeakObjectAssociator.h */,
+				67D420AC1A0D0999008A1853 /* XHWeakObjectAssociator.m */,
+			);
+			path = RefreshControl;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,7 +243,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				67376ED71A0C978700A6AC1B /* ViewController.m in Sources */,
+				67D420AD1A0D0999008A1853 /* XHWeakObjectAssociator.m in Sources */,
+				67376EF71A0C97B800A6AC1B /* XHRefreshControl.m in Sources */,
 				67376ED41A0C978700A6AC1B /* AppDelegate.m in Sources */,
+				67D420B01A0D1446008A1853 /* XHDemoRefreshControl.m in Sources */,
 				67376ED11A0C978700A6AC1B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -412,6 +438,7 @@
 				67376EF01A0C978700A6AC1B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		67376EF11A0C978700A6AC1B /* Build configuration list for PBXNativeTarget "XHRefreshControlTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +447,7 @@
 				67376EF31A0C978700A6AC1B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
